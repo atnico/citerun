@@ -567,6 +567,22 @@ footer i{
    .sidenav a{
     display: block;
    }
+
+   .menu760px{
+    display: block;
+    visibility: visible;
+    position: fixed;
+   }
+
+   .menu760px i{
+    visibility: visible;
+    position: fixed;
+    margin: 0 auto;
+   }
+
+   .form-contact{
+    width: 100vw;
+   }
 }
 
 .presentation-actualite{
@@ -611,7 +627,7 @@ form{
 .form-contact{
     margin-top: 150px;
     font-family: lato;
-    color: white;
+    color: #39aef2;
     padding: 20px;
 
 }
