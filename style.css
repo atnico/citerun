@@ -1,0 +1,625 @@
+/* DOCUMENT INFORMATIONS 
+    -Document : cit-erun
+    -Version : 1.0.0
+    -Author: Nicolas
+*/
+
+
+/* COLORS
+    -defaut body text : #eee & #fff
+    -h1 :#39aef2  
+    -fond d'ecran : #fff & #39aef2  
+    -buttons : #39aef2  & #fff
+    -logo : #41ebbe  
+    borders : #39aef2  
+*/
+
+
+/* FONTS
+    -default : Lato
+    -h1 : Lato
+*/
+
+
+/* CSS DIRECTORY
+    1. GLOBAL
+    2. HEADER
+    3. PRESENTATION
+    4. EVENEMENTS
+    5. FOOTER
+*/
+
+/* GLOBAL
+========================================================*/
+
+body{
+    font-family: lato;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body h1, h2, h3, h4, h5{
+    font-family: lato;
+    color: #39aef2;
+    font-weight: bold;
+}
+
+
+/* NAVBAR
+========================================================*/
+
+#navbar{
+    position: fixed;
+    background-color: white;
+    width: 110vw;
+    margin-left: -65px;
+    top: 0;
+    
+    
+}
+
+#hamburgerAndTitle{
+    display: none;
+}
+
+#navigationLinks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+#navigationLinks a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #39aef2;
+}
+
+#navigationLinks img{
+    margin-top: -20px;
+    ;
+}
+
+.nav-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-logo img{
+    justify-content: flex-start;
+    width: 90px;
+    align-items: flex-start;
+    margin-left: -100px;
+}
+
+#navbar-elements{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar-elements a{
+    color: #39aef2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+#menu-burger{
+    display: none;
+}
+
+/* SIDENAV */
+
+.menu760px{
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    color: #39aef2;
+}
+.menu760px a{
+    color: #39aef2;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: white;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #39aef2;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+#navigationLinks a:hover{
+    color: rgb(0, 72, 255);
+    transition: 500ms;
+    transform: scale(2);
+}
+
+
+/* PRESENTATION
+========================================================*/
+.presentation-entreprise h1, h5{
+    color: #39aef2;
+    box-shadow: 5px 5px 5px #39aef2;
+}
+
+#presentation{
+    margin-bottom: 50px;
+   background: linear-gradient(#fff, #39aef2);
+    padding: 30px;
+    
+}
+
+.presentation-entreprise{
+    margin-top: -50px;
+    
+}
+
+.titre-presentation{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.titre-presentation h1{
+    color: #39aef2;
+    margin-top: 90px;
+}
+
+#presentation img{
+    border: 2px white;
+    background-color: #39aef2;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 10px 10px 10px blue;
+    width: 300px;
+}
+
+.justify{
+    display: flex;
+    justify-content: center;
+}
+
+.texte-run{
+    margin-top: 100px;
+}
+
+.btn-presentation{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.button-presentation-entreprise a{
+    text-decoration: none;
+    background-color: #39aef2;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+
+.presentation-entreprise-texte{
+    color: #39aef2;
+    font-size: 1rem;
+}
+span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button-presentation-concept a{
+    text-decoration: none;
+    background-color: white;
+    color: #39aef2;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.presentation-concept{
+    background-color: #39aef2;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.presentation-actualite{
+    background-image: url(./imagesrunning/octobre-rosepetite.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+    
+}
+
+.presentation-actualite p{
+    font-family: lato;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.presentation-actualite a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+.button-presentation-entreprise a:hover{
+    background-color: white; 
+    transition: 1.5s;
+    transform: scale(1.3);
+    color: #39aef2;
+    border: 1px solid #39aef2;
+ }
+
+.button-presentation-concept a:hover{
+    background-color: rgb(0, 149, 255); 
+    transition: 1.5s;
+    color: white;
+    transform: scale(1.3);
+    border: 1px solid white;
+} 
+
+.justify img:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+
+
+
+/* EVENEMENTS
+========================================================*/
+
+#evenements{
+    margin-bottom: 50px;
+}
+
+
+.photos-france{
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    border: 1px white;
+    box-shadow: 5px 5px 5px white;
+}
+
+.photos-france h3{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+
+.photos-france a{
+    font-weight: bold;
+    color: #39aef2;
+    text-decoration: none;
+    background-color: white;
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 10px 10px 10px grey;
+}
+.photo-ville{
+    width: 400px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.photo-paris{
+    background-image: url(./imagesrunning/runningparis.jpeg);
+    border: 3px #39aef2;
+    border-radius: 10px;
+}
+
+.photo-marseille{
+    background-image: url(./imagesrunning/runningmarseille.png);
+    border: 3px #39aef2;
+    border-radius: 10px;
+}
+
+.photo-lyon{
+    background-image: url(./imagesrunning/runninglyon.png);
+    border: 3px #39aef2;
+    border-radius: 10px;
+}
+
+.photo-bordeaux{
+    background-image: url(./imagesrunning/runningbordeauxpetite.png);
+    border: 3px #39aef2;
+    border-radius: 10px;
+}
+
+.photo-lille{
+    background-image: url(./imagesrunning/runninglille.jpeg);
+    border: 3px #39aef2;
+    border-radius: 10px;
+}
+
+.photo-nantes{
+    background-image: url(./imagesrunning/runningnantes.png);
+    border: 3px #39aef2;
+    border-radius: 10px;
+}
+
+
+
+.photos-france a:hover{
+    background-color: #39aef2;
+    color: white;
+    transition: 2s;
+    transform: scale(1.5);
+}
+
+
+
+/* FOOTER
+========================================================*/
+
+footer{
+    margin-top: 50px;
+    border: 1px solid #39aef2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #39aef2;
+}
+
+.footer-mail, p{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-mail a{
+text-decoration: none;
+background-color: white;
+color: #39aef2;
+padding: 10px 20px;
+border-radius: 5px;
+margin-bottom: 20px;
+margin-top: 20px;
+
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    
+}
+
+.icon-reseaux{
+    display: flex;
+    justify-content: center;
+}
+
+footer i{
+    color: white;
+    margin: 30px;
+}
+
+.ligne-footer{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid white;
+}
+
+.footer-mentions{
+    display: flex;
+    text-align: center;
+}
+
+.fa-brands:hover{
+    color: rgb(0, 72, 255);
+    transition: 1s;
+    transform: scale(1.3);
+    
+}
+
+.footer-mail a:hover{
+    background-color: rgb(0, 72, 255);
+    color: white;
+    transition: 2s;
+}
+
+/* MEDIA QUERIES
+========================================================*/
+
+.oCategorieValeur{
+    width: 300px;
+}
+
+/* MEDIA QUERIES
+========================================================*/
+
+/********** NAVBAR MOBILE *******/
+
+@media screen and (min-width: 767px){
+    .menu760px{
+        display: none;
+    }
+    
+    .justify{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    .justify img{
+        width: 200px;
+    }
+
+    #presentation img{
+        width: 200px;
+    }
+
+    .recherche-map iframe{
+        width: 300px;
+    }
+
+    .carousel-inner img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .input-group{
+        width: 600px;
+
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 120vw;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    
+
+   #navigationLinks{
+    display: flex;
+    
+   }
+
+   #navigationLinks a{
+    display: none;
+   }
+
+   .sidenav{
+    display: flex;
+    
+   }
+
+   .sidenav a{
+    display: block;
+   }
+}
+
+.presentation-actualite{
+  width: 100%; 
+  height: 200px;
+  background-size: cover;
+   
+}
+
+/* STYLE PAGE 2
+========================================================*/
+
+
+form{
+    width: 600px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    
+}
+
+.recherche-map iframe{
+    height: 350px;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 10px;
+}
+
+
+.galerie-titre{
+    justify-self: center;
+}
+
+#carouselExampleControls{
+    margin-top: 150px;
+    box-shadow: 10px 10px 10px rgb(255, 0, 111);
+}
+
+#carouselExampleControls img{
+    height: 390px;
+    border-radius: 10px;
+}
+
+.form-contact{
+    margin-top: 150px;
+    font-family: lato;
+    color: white;
+    padding: 20px;
+
+}
+
+.form-contact-btn{
+    padding: 10px;
+}
+
+
+
+

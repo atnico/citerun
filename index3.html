@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>cit-erun</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!---- font-awesome -->
+    <script src="https://kit.fontawesome.com/f1b49c94fc.js" crossorigin="anonymous"></script>
+    <!-- fichier javasript -->
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav id="navbar">
+                            <!-- <div id="hamburgerAndTitle">
+                                    <i id="hamburger" class="fas fa-bars fa-2x"></i>
+                                    
+                                </div> -->
+                            <div id="navigationLinks">
+                                <div class="nav-logo">
+                                    <img src="./logo/CIT-e.png" alt="">
+                                </div>
+                                <a href="index.html">Accueil</a>
+                                <a href="index2.html">Evenements</a>
+                                <a href="index3.html">Contact</a>
+                            </div>
+                        </nav>
+
+                        <div class="menu760px">
+                            <div id="mySidenav" class="sidenav">
+                                <a id="closeBtn" href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
+                                <ul>
+                                    <li><a href="#">Accueil</a></li>
+                                    <li><a href="#">Evenements</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" id="openBtn">
+                                <span class="burger-icon">
+                                    <i class="fa-solid fa-burger"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!------------------------------ FORMULAIRE DE CONTACT ------------------------------------------------->
+    <section id="formulaire">
+        <form>
+            <div class="form-contact">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Nom</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Prénom</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Addresse</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="numéro, rue...">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Addresse 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="batiment, digicode, étage...">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Ville</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Département</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Sélectionnez</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Code postal</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Votre message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-contact-btn">
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+<!------------------------------ FOOTER ------------------------------------------------->
+
+<footer>
+    <div class="container">
+        <div class="row ligne-footer">
+            <div class="col-md-4 ">
+                <div class="footer-mail">
+                    <a href="mailto:atnico0304@gmail.com">Ecrivez nous par email</a>
+                </div>
+                <p> Tel: 0767430741</p>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <img src="./logo/CIT-e.png" alt="logo-cit-erun">
+                </div>
+            </div>
+            <div class="col-md-4 icon-reseaux">
+                <a href="/"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                <a href="/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                <a href="/"><i class="fa-brands fa-twitter fa-3x"></i></a>
+            </div>
+            <div class="col-md-12">
+
+            </div>
+
+        </div>
+        <div class="row footer-mentions">
+            <div class="col-md-4">
+                Copyright
+            </div>
+            <div class="col-md-4">
+                Politique de confidentialité
+            </div>
+            <div class="col-md-4">
+                Mentions légales
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
